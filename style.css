@@ -1,0 +1,256 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #484848;
+    margin: 0;
+}
+
+.img{
+    object-fit: cover;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu li{
+    position: relative;
+    float: left;
+}
+
+.menu a{
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.78em;
+}
+
+.menu li ul{
+    position: absolute;
+    top: 25px;
+    display: none;
+}
+.menu ul{
+    padding: 0;
+}
+
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+}
+
+.menu li ul li{
+    display:block;    
+}
+
+.navbar1{
+    position: absolute;
+    right: 1%;
+    top: 0;
+}
+.navbar2{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.drop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drop-box{
+    background-color: aliceblue;
+}
+.drop-box a{
+    color: black;
+}
+
+#icon_drop{
+    width: 0.9em;
+    height: 0.9em;
+}
+
+.logo-block{
+    text-align: center;
+    width: 40em;
+}
+
+.logo{
+    width: 100%;
+}
+
+.subtituto{
+    display: inline;
+    color: white;
+}
+
+.seta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: auto;
+    top: 85%;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: white;
+    width: 4em;
+    height: 4em;
+    border-radius: 10em;
+}
+.seta-page{
+    transform: rotate(90deg);
+    width: 50%;
+}
+
+
+.logo-soft{
+    margin: 0em 2em;
+}
+
+.frase-efeito{
+    text-align: center;
+    width: 16em;
+    color: white;
+}
+
+.bot{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 22em;
+    margin: 1em;
+}
+
+.icon-bot{
+    width: 1.8em;
+    margin: 0px 10px 0px 2px;
+}
+
+#bot-solicitar{
+    background-color: #DF4B62;
+}
+#bot-demonstrar{
+    background-color: #F80;
+}
+
+.bot-txt{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+
+.play-video{
+    border: none;
+    border-radius: 10em;
+    width: 8em;
+    height: 8em;
+    background-color: #cd384f;
+    margin: 20px;
+}
+
+
+.ring{
+    border: 5px solid white;
+    border-radius: 10em;
+    width: 6em;
+    height: 6em;
+}
+
+.play{
+    width: 50%;
+    margin-left: 10px;
+}
+
+.monitor-block{
+    overflow: hidden;
+}
+.monitor{
+    display: block;
+    width: 15em;
+}
+.monitor-img{
+    width: 100%;
+}
+.link-demo{
+    margin-top: 10px;
+    text-decoration: none;
+    color: #484848;
+}
+
+.title-page3{
+    margin-left: 100px;
+    font-size: 2em;
+    width: 20em;
+}
+.txt-page3{
+    width: 30em;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-left: 100px;
+    color: #484848;
+    text-align: justify;
+}
+
+
+
+
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+#container{
+    z-index: 10;
+    height: 100vh;
+}
+#container-semipage{
+    background-color: #484848;
+    z-index: 20;
+    padding: 1em 0em;
+}
+#container-semipage2{
+    z-index: 20;
+    height: 100vh;
+    background-image: url(https://www.softexpert.com/ext/teste-estagio-devweb/quebra-cabecas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container-page{
+    background-color: #d4d4d4;
+    z-index: 20;
+}
