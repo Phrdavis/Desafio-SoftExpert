@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css"  href="style.css" />
     <link rel="icon" href="https://www.softexpert.com/wp-content/themes/Zephyr-child/icon-softexpert-site.png" type="image/x-icon">
+    <script src="script.js" defer></script>
     <title>SoftExpert Excellence Suite - SoftExpert</title>
 </head>
 <body>
@@ -149,33 +150,19 @@
     <div class="container column" id="container-light">
         <h2 class="screen">Screenshots</h2>
         
-        <div class="slider">
-            <ul class="cont" id="imgs">
-                <li>
-                    <img src="images/monitor-soft.png" alt="">
-                </li>
-                <li>
-                    <img src="images/monitor-soft.png" alt="">
-                </li>
-                <li>
-                    <img src="images/monitor-soft.png" alt="">
-                </li>
-                <li>
-                    <img src="images/monitor-soft.png" alt="">
-                </li>
-                <li>
-                    <img src="images/monitor-soft.png" alt="">
-                </li>
-                <li>
-                    <img src="images/monitor-soft.png" alt="">
-                </li>
-                <li>
-                    <img src="images/monitor-soft.png" alt="">
-                </li>
-                <li>
-                    <img src="images/monitor-soft.png" alt="">
-                </li>
-            </ul>
+        <div class="carrosel">
+            <button id="prev" onclick= prev()>Prev</button>
+            <div class="cont" id="img">
+                <img  src="images/monitor-soft.png" alt="">
+                <img src="images/monitor-soft.png" alt="">
+                <img src="images/monitor-soft.png" alt="">
+                <img src="images/monitor-soft.png" alt="">
+                <img src="images/monitor-soft.png" alt="">
+                <img src="images/monitor-soft.png" alt="">
+                <img src="images/monitor-soft.png" alt="">
+                <img src="images/monitor-soft.png" alt="">
+            </div>
+            <button id="next" onclick= next()>Next</button>
         </div>
     </div>
 </body>

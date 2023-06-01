@@ -208,15 +208,24 @@ body{
 .screen{
     margin-top: 5em;
 }
-.slider{
+
+.carrosel{
+    width: 1580px;
+    height: 500px;
     overflow: hidden;
-    height: 310px;
-    width: 1220px;
 }
+
 .cont{
     display: flex;
-    transition: all 0.5s ease-in-out;
-    transform: translateX(0);
+}
+
+#prev{
+    position: relative;
+    z-index: 20;
+}
+#next{
+    position: relative;
+    z-index: 20;
 }
 
 
