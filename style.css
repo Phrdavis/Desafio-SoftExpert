@@ -205,6 +205,20 @@ body{
     text-align: justify;
 }
 
+.screen{
+    margin-top: 5em;
+}
+.slider{
+    overflow: hidden;
+    height: 310px;
+    width: 1220px;
+}
+.cont{
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
 
 
 
@@ -213,7 +227,7 @@ body{
 .row{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .row-center{
@@ -238,6 +252,11 @@ body{
     z-index: 10;
     height: 100vh;
 }
+#container-light{
+    background-color: #fff;
+    z-index: 10;
+    height: 100vh;
+}
 #container-semipage{
     background-color: #484848;
     z-index: 20;
@@ -245,12 +264,14 @@ body{
 }
 #container-semipage2{
     z-index: 20;
-    height: 100vh;
     background-image: url(https://www.softexpert.com/ext/teste-estagio-devweb/quebra-cabecas.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
+    height: 1365px;
 }
 #container-page{
     background-color: #d4d4d4;
     z-index: 20;
+    padding: 10em 0em;
 }
