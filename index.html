@@ -150,19 +150,134 @@
     <div class="container column" id="container-light">
         <h2 class="screen">Screenshots</h2>
         
-        <div class="carrosel">
-            <button id="prev" onclick= prev()>Prev</button>
-            <div class="cont" id="img">
-                <img  src="images/monitor-soft.png" alt="">
-                <img src="images/monitor-soft.png" alt="">
-                <img src="images/monitor-soft.png" alt="">
-                <img src="images/monitor-soft.png" alt="">
-                <img src="images/monitor-soft.png" alt="">
-                <img src="images/monitor-soft.png" alt="">
-                <img src="images/monitor-soft.png" alt="">
-                <img src="images/monitor-soft.png" alt="">
+        <div class="carrosel row-center">
+            <button class="column" id="prev" onclick= next()> <img class="seta-slide" src="images/right-arrow.png" alt=""> </button>
+            
+            <div class="cont" id="img"></div>
+
+            <button class="column" id="next" onclick= next()> <img class="seta-slide" src="images/right-arrow.png" alt=""> </button>
+        </div>
+        
+        <div class="carrosel row-center">
+            <button class="column" id="prev" onclick= next2()> <img class="seta-slide" src="images/right-arrow.png" alt=""> </button>
+            
+            <div class="cont" id="img2"></div>
+
+            <button class="column" id="next" onclick= next2()> <img class="seta-slide" src="images/right-arrow.png" alt=""> </button>
+        </div>
+    </div>
+    <div class="container row-center" id="container-page">
+        <div class="cubo-focus">
+            <img class="cubo" src="https://www.softexpert.com/wp-content/webp-express/webp-images/uploads/2019/10/xcubo-sesuite-menor.png.pagespeed.ic_.uMfyZoNCJD.png.webp" alt="">
+            <span class="focus"></span>
+        </div>
+        <div class="txt-area">
+            <p class="title-area">Principais benefícios da solução</p>
+            <ul class="txt-list">
+                <li>Um única área de trabalho</li>
+                <li>Uma única interface com o usuário</li>
+                <li>Integração total de dados e funções</li>
+                <li>Alta produtividade e confiabilidade</li>
+                <li>Facilidade de uso e de aprendizagem</li>
+                <li>Uma única portabilidade multiplataforma</li>
+                <li>Um único acordo de nível de serviço</li>
+                <li>Um único contato para suporte técnico</li>
+                <li>Um único fornecedor responsável</li>
+                <li>Compartilhamento das licenças entre as aplicações</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container column" id="container-semipage-light">
+        <h2 class="title-area">O desafio</h2>
+        <p class="txt-des">Organizações dos mais variados portes e setores de atuação estão enfrentando árduos desafios, incluindo a elevação dos custos, redução das margens de lucro e elevada ineficiência operacional. Além disto, elas tem que se adaptar a um ambiente de contínua elevação das exigências regulamentares e legais, somado a uma crescente pressão do mercado por maior qualidade, segurança e eficiência. Por fim, estas organizações ainda se deparam com a complexa equação de otimizar seus custos sem baixar a qualidade da sua cadeia de fornecimento.</p>
+        <p class="txt-des">Nesta mesma direção, as pressões e desafios para a competitividade aumentam a cada ano, em sintonia com o crescimento das expectativas dos clientes e acionistas que continuamente impactam diretamente as estratégias do negócio.</p>
+
+        <button class="row bot-cont" onclick= continuos()>
+            <p class="continuos">CONTINUE LENDO</p>
+            <img class="arrow-continuos" id="arrow-des" src="images/arrow-des.png" alt="">
+        </button>
+        <div id="continuar-lendo"></div>
+
+    </div>
+    <div class="container column" id="container-page2">
+        <h2 class="title-area">Materias em Destaque</h2>
+
+        <div class="row-center">
+            <div class="block">
+                <div class="card">
+                    <div class="front column-bet">
+                        <img class="card-img" src="https://www.softexpert.com/wp-content/webp-express/webp-images/uploads/2017/02/img-download-ebook-7-ferramentas.jpg.webp" alt="">
+                        <p class="card-txt"><strong>7 ferramentas capitais para a excelência na gestão</strong></p>
+                        <div class="row-end icon-txt">
+                            <p class="txt-icon">EBOOK</p>
+                            <div class="icon-bac column">
+                                <img class="card-icon" src="images/book.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back column">
+                        <p class="card-txt">Leia este eBook e saiba como ter uma visão geral do negócio, descobrir novas informações e tomar decisões mais precisas.</p>
+                        <button class="card-button">Download</button>
+                        <a class="card-link" href="https://www.softexpert.com/pt-br/material/7-ferramentas-capitais-para-a-excelencia-na-gestao/" target="_blank">SAIBA MAIS</a>
+                    </div>
+                </div>
             </div>
-            <button id="next" onclick= next()>Next</button>
+
+
+            
+            <div class="block">
+                <div class="card">
+                    <div class="front column-bet">
+                        <img class="card-img" src="https://www.softexpert.com/wp-content/webp-express/webp-images/uploads/2020/08/overeviews-6-ferramentas.png.webp" alt="">
+                        <p class="card-txt"><strong>6 ferramentas-chave para a excelência na Governança Corporativa</strong></p>
+                        <div class="row-end icon-txt">
+                            <p class="txt-icon">EBOOK</p>
+                            <div class="icon-bac column">
+                                <img class="card-icon" src="images/book.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back column">
+                        <p class="card-txt">Leia este eBook para descobrir quais são as ferramentas chave para se alcançar a excelência em GRC.</p>
+                        <button class="card-button">Download</button>
+                        <a class="card-link" href="https://www.softexpert.com/pt-br/material/6-ferramentas-chave-para-a-excelencia-em-grc/" target="_blank">SAIBA MAIS</a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="block">
+                <div class="card">
+                    <div class="front column-bet">
+                        <img class="card-img" src="https://www.softexpert.com/wp-content/webp-express/webp-images/uploads/2017/02/img-download-ebook-ISO9001.jpg.webp" alt="">
+                        <p class="card-txt"><strong>ISO 9001:2015 – Você está preparado?</strong></p>
+                        <div class="row-end icon-txt">
+                            <p class="txt-icon">EBOOK</p>
+                            <div class="icon-bac column">
+                                <img class="card-icon" src="images/book.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back column">
+                        <p class="card-txt">Veja as principais mudanças da revisão 2015 da ISO 9001.</p>
+                        <button class="card-button">Download</button>
+                        <a class="card-link" href="https://www.softexpert.com/pt-br/material/ebook-iso-90012015-voce-esta-preparado/" target="_blank">SAIBA MAIS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a class="destaque-link" href="https://www.softexpert.com/pt-br/material/?sol=,60282">Veja Mais</a>
+    </div>
+    <div class="container column" id="container-semipage3">
+        <img class="fund-conh" src="https://www.softexpert.com/wp-content/themes/Zephyr-child/framework/img/bg-solucao-destaque.png" alt="">
+        <h2 class="title-conh">Conheça Também</h2>
+        <div class="card-conh column">
+            <div class="card-conh-img">
+                <img class="conh-img" src="https://www.softexpert.com/wp-content/webp-express/webp-images/uploads/2016/09/logo-solucao-necessidade-ecm-1.png.webp" alt="">
+            </div>
+            <p class="card-txt">SoftExpert ECM</p>
         </div>
     </div>
 </body>
