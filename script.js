@@ -4,6 +4,9 @@ const arrow = document.getElementById("arrow-des");
 const lendo_txt = document.getElementById("continuar-lendo");
 arrow.style.transform = "rotate(-90deg)"
 
+const modal = document.getElementById("modal");
+const up = document.getElementById("up");
+
 const images1 = [
     "images/rolagem 1.1.png",
     "images/rolagem 1.2.png",
@@ -77,3 +80,19 @@ function continuos(){
     }
     
 }
+
+function modal_email(){
+    if(modal.style.visibility == "visible"){
+        modal.style.visibility = "hidden"
+    }else{
+        modal.style.visibility = "visible"
+    }
+}
+function close_modal(){
+    modal.style.visibility = "hidden"
+}
+
+// document.addEventListener("scroll", function(){
+//     var posicion = 
+// })
+// https://pt.stackoverflow.com/questions/194428/evento-de-scroll
