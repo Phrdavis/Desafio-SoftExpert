@@ -13,14 +13,15 @@
     <!-- Imagem de Fundo -->
     <div>
         <!-- Imagem -->
-        <img class="img" id="img" src="https://www.softexpert.com/wp-content/webp-express/webp-images/uploads/2023/04/fundo-novo.png.webp" alt="">
+        <img class="img" src="https://www.softexpert.com/wp-content/webp-express/webp-images/uploads/2023/04/fundo-novo.png.webp" alt="">
         <!-- Seta indicando para baixo -->
-        <a href="#seta">
+        <a href="#logo-soft" id="seta-link">
             <div class="seta" id="seta">
                 <img class="seta-page" src="images/right-arrow.png" alt="">
             </div>
         </a>
-        <a href="#img">
+        <!-- Seta indicando para cima -->
+        <a href="#navbar">
             <div class="seta-top" id="up">
                 <img class="up-page" src="images/up-arrow.png" alt="">
             </div>
@@ -29,26 +30,26 @@
     <!-- Menus superiores -->
     <div class="container column" id="container">
         <!-- Primeiro Menu -->
-        <nav class="navbar1">
+        <nav class="navbar1" id="navbar">
             <!-- Lista de opções -->
             <ul class="menu">
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Portal do Parceiro</a></li>
-                <li><a href="#">Costumer Center</a></li>
+                <li><a href="https://www.softexpert.com/pt-br/contato/" target="_blank">Contato</a></li>
+                <li><a href="https://store.softexpert.com/" target="_blank">Store</a></li>
+                <li><a href="https://www.softexpert.com/pt-br/portal-do-parceiro/" target="_blank">Portal do Parceiro</a></li>
+                <li><a href="https://www.softexpert.com/pt-br/customer-center/" target="_blank">Costumer Center</a></li>  
                 <!-- Dropdown Idioma -->
                 <li class="drop">
                     <img id="icon_drop" src="images/planet.png" title="world icons">
-                    <a href="#">PT</a>
-                    <img id="icon_drop" src="images/seta_drop.png" title="drop">
-                    <ul class="drop-box">
-                        <li><a href="#">DE</a></li>
-                        <li><a href="#">EN</a></li>
-                        <li><a href="#">ES</a></li>
-                        <li><a href="#">FR</a></li>
-                        <li><a href="#">IT</a></li>
-                        <li><a href="#">RU</a></li>
-                        <li><a href="#">JA</a></li>
+                    <a href="#">PT<img id="icon_drop" src="images/seta_drop.png" title="drop"></a>
+                    
+                    <ul class="drop-box" id="idiomas">
+                        <li class="drop-idi"><a href="#">DE</a></li>
+                        <li class="drop-idi"><a href="#">EN</a></li>
+                        <li class="drop-idi"><a href="#">ES</a></li>
+                        <li class="drop-idi"><a href="#">FR</a></li>
+                        <li class="drop-idi"><a href="#">IT</a></li>
+                        <li class="drop-idi"><a href="#">RU</a></li>
+                        <li class="drop-idi"><a href="#">JA</a></li>
                     </ul>
                 </li>
             </ul>
@@ -59,62 +60,193 @@
             <ul class="menu">
                 <!-- Dropdown Produtos -->
                 <li class="drop">
-                    <a href="https://www.softexpert.com/pt-br/por-necessidade-de-negocio/">Produtos</a>
-                    <img id="icon_drop" src="images/seta_drop.png" title="drop">
-                    <ul class="drop-box">
-                        <li><a href="https://www.softexpert.com/pt-br/por-necessidade-de-negocio/">Por Necessidade de Negócio</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/por-industria/">Por Industria</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/por-regulamento/">Por Regulamento</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/todos-os-produtos/">Todos os produtos</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/solucao/softexpert-excellence-suite/">SoftExpert Excellence Suite</a></li>
+                    <a href="https://www.softexpert.com/pt-br/por-necessidade-de-negocio/" target="_blank">Produtos<img id="icon_drop" src="images/seta_drop.png" title="drop"></a>
+                    
+                    <ul class="drop-box" id="produtos">
+                        <li class="drop-item drop">
+                            <a href="https://www.softexpert.com/pt-br/por-necessidade-de-negocio/" target="_blank">Por Necessidade de Negócio</a>
+                            <ul class="drop-box-drop">
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-processos-negocio-bpm/" target="_blank">Gestão de processos de negócios - BPM</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-desempenho-corporativo-cpm/" target="_blank">Gestão do Desempenho Corporativo - CPM</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-ativos-empresariais-eam/" target="_blank">Gestão de Ativos - EAM</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-conteudo-empresarial-ecm/" target="_blank">Gestão do Conteudo Empresarial - ECM</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-qualidade-empresarial-eqm/" target="_blank">Gestão da Qualidade Empresarial - EQM</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-riscos-corporativos-erm/" target="_blank">Gestão de Riscos Corporativos</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-ambiental-social-governanca-corporativa-esg/" target="_blank">Gestão Ambiental, Social e de Governança Corporativa - ESG</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-governanca-riscos-conformidade-grc/" target="_blank">Gestão de Governança, Riscos e Conformidade - GRC</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-desenvolvimento-humano-hdm/" target="_blank">Gestão do Desenvolvimento Humano - HDM</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-mudancas-inovacao-icm/" target="_blank">Gestão de Mudanças e Inovação - </a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-servicos-corporativos-esm/" target="_blank">Gestão de Serviços Corporativos - ESM</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-ciclo-vida-produto-plm/" target="_blank">Destão de Ciclo de Vida do Produto - PLM</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-projetos-portfolios-ppm/" target="_blank">Gestão de Projetos e Portifólio - PPM</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/gestao-ciclo-vida-fornecedores/" target="_blank">Gestão de Ciclo de Vida dos Fornecedores - SLM</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-item drop">
+                            <a href="https://www.softexpert.com/pt-br/por-industria/" target="_blank">Por Industria</a>
+                            <ul class="drop-box-drop">
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/aeroespacial-e-defesa/" target="_blank">Aeroespacial e Defesa</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/agronegocio/" target="_blank">Agronegócio</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/produtos-quimicos/" target="_blank">Produtos Químicos</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/bens-de-consumo/" target="_blank">Bens de Consumo</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/arquitetura-engenharia-e-construcao/" target="_blank">Arquitetura, Engenharia e Construção</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/automotivo/" target="_blank">Automotivo</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/educacao/" target="_blank">Educação</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/servicos-financeiros/" target="_blank">Serviços Financeiros</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/servicos-financeiros/" target="_blank">Alimentos e bebidas</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/hospitais-e-laboratorios/" target="_blank">Hospitais e Laboratórios</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/energia-e-utilidade-publica/" target="_blank">Energia e Utilizadade Pública</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/tecnologia/" target="_blank">Tecnologia</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/equipamentos-medicos/" target="_blank">Equipamento Médicos</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/mineracao-e-metalurgia/" target="_blank">Mineração e Metalurgica</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/farmaceutico-e-biotecnologia/" target="_blank">Farmacêutico e Biotecnico</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/setor-publico/" target="_blank">Setor Público</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/varejo/" target="_blank">Varejo</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/transporte-e-logistica/" target="_blank">Transporte e Logística</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/operadoras-de-saude/" target="_blank">Operadoras de Saúde</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-item">
+                            <a href="https://www.softexpert.com/pt-br/por-regulamento/" target="_blank">Por Regulamento</a>
+                            <ul class="drop-box-drop">
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-15100/" target="_blank">ISO 15100</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/bpmn/" target="_blank">BPMN</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/bsc/" target="_blank">BSC</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/cbok/" target="_blank">CBOK</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/?post_type=solucao&p=959/" target="_blank">CMMI</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/cobit/" target="_blank">COBIT</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/coso/" target="_blank">COSO</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/fda-21-cfr-part-11/" target="_blank">FDA 21 CFR Part 11</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/fda-21-cfr-part-820/" target="_blank">FDA 21 CFR Part 820</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/fssc-22000/" target="_blank">FSSC 22000</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iatf-16949/" target="_blank">IATF 16949</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-10015/" target="_blank">BPMN</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-13485/" target="_blank">ISO 10015</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-13485/" target="_blank">ISO 13485</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-14000/" target="_blank">ISO 14000</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-15189/" target="_blank">ISO 15189</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-19011/" target="_blank">ISO 19011</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-20000/" target="_blank">ISO 20000</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-22000/" target="_blank">ISO 22000</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-22301/" target="_blank">ISO 22301</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-26000/" target="_blank">ISO 26000</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-27001/" target="_blank">ISO 27001</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-31000/" target="_blank">ISO 31000</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-37001/" target="_blank">ISO 37001</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-45001/" target="_blank">ISO 45001</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-50001/" target="_blank">ISO 50001</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-55000/" target="_blank">ISO 55000</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-9000/" target="_blank">ISO 9000</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/iso-iec-17025/" target="_blank">ISO/IEC 17025</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/isots-14253/" target="_blank">ISO/TS 14253</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/itil/" target="_blank">ITIL</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/ohsas-18000/" target="_blank">OHSAS 18000</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/pmbok/" target="_blank">PMBOK</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/six-sigma/" target="_blank">Six Sigma</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/sox/" target="_blank">SOX</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/solucao/lgpd/" target="_blank">LGPD</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-item">
+                            <a href="https://www.softexpert.com/pt-br/todos-os-produtos/" target="_blank">Todos os produtos</a>
+                            <ul class="drop-box-drop">
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-almoxarifado/" target="_blank">Almoxarifado</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/business-intelligence/" target="_blank">Analytics</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/apqp-ppap/" target="_blank">APQP-PPAP</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-documentos-fisicos/" target="_blank">Arquivo Físico</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-ativos/" target="_blank">Ativo</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/planejamento-controle-auditorias/" target="_blank">Auditoria</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-base-conhecimento/" target="_blank">Base de Conhecimento</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/captura-documentos/" target="_blank">Captura</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/cep-controle-estatistico-processos/" target="_blank">CEP</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-cliente/" target="_blank">Cliente</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/mapeamento-avaliacao-competencias/" target="_blank">Competência</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/controle-atividades/" target="_blank">Controle de Atividades</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-desempenho/" target="_blank">Desempenho</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-documentos-registros/" target="_blank">Documento</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/fmea/" target="_blank">FMEA</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-formularios/" target="_blank">Formulário</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-fornecedor/" target="_blank">Fornecedor</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-incidentes/" target="_blank">Incidente</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/inspecao-materiais-produtos/" target="_blank">Inspeção</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-kanban/" target="_blank">Kanban</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-manutencao/" target="_blank">Manutenção</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/msa-analise-sistemas-medicao/" target="_blank">MSA</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-ciclo-vida-produtos-servicos/" target="_blank">PDM</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-atividades-planos-acao/" target="_blank">Plano de Ação</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-portfolio-projetos/" target="_blank">Portifólio</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-problemas/" target="_blank">Problema</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-processos/" target="_blank">Processo</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-projetos/" target="_blank">Projeto</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-documentos-tramites/" target="_blank">Protocolo</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-questionarios/" target="_blank">Questionário</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-conformidade-regulamentar/" target="_blank">Requisito</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-riscos-controles/" target="_blank">Risco</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-reunioes/" target="_blank">Reunião</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/gestao-solicitacoes-servicos/" target="_blank">Solicitação</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/planejamento-controle-treinamentos/" target="_blank">Treinamento</a></li>
+                                <li class="drop-item"><a href="https://www.softexpert.com/pt-br/produto/workflow/" target="_blank">Workflow</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="drop-item" id="SoftExpert">
+                            <a href="https://www.softexpert.com/pt-br/solucao/softexpert-excellence-suite/" target="_blank">SoftExpert Excellence Suite</a>
+                            <ul class="drop-box-drop">
+                                <li class="drop-item" id="drop-img">
+                                    <a href="#" target="_blank">
+                                        <img src="https://www.softexpert.com/wp-content/uploads/2023/04/banner-excellence-suite-mega-menu.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <!-- Dropdown Serviços -->
                 <li class="drop">
-                    <a href="https://www.softexpert.com/pt-br/servicos/">Serviços</a>
-                    <img id="icon_drop" src="images/seta_drop.png" title="drop">
+                    <a href="https://www.softexpert.com/pt-br/servicos/" target="_blank">Serviços<img id="icon_drop" src="images/seta_drop.png" title="drop"></a>
+                    
                     <ul class="drop-box">
-                        <li><a href="https://www.softexpert.com/pt-br/servicos/">Visão Geral</a></li>
-                        <li><a href="https://store.softexpert.com/">Training</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/servicos/cloud-computing/">Cloud Computing</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/servicos/consultoria-e-implantacao/">Consultoria e Implantação</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/servicos/personalizacao-da-aplicacao-e-manipulacao-de-dados/">Personalização da Aplicação e manipulação de dados</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/servicos/outsourcing/">Outsourcing</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/servicos/integracao/">Integração</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/servicos/otimizacao-de-performance/">Otimização de performance</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/servicos/pacote-de-horas-de-servicos/">Pacote de horas de serviço</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/servicos/suporte/">Suporte</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/servicos/validacao/">Validação</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/servicos/automacao-processos/">Automação de processos</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/servicos/" target="_blank">Visão Geral</a></li>
+                        <li class="drop-item"><a href="https://store.softexpert.com/" target="_blank">Training</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/servicos/cloud-computing/" target="_blank">Cloud Computing</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/servicos/consultoria-e-implantacao/" target="_blank">Consultoria e Implantação</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/servicos/personalizacao-da-aplicacao-e-manipulacao-de-dados/" target="_blank">Personalização da Aplicação e manipulação de dados</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/servicos/outsourcing/" target="_blank">Outsourcing</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/servicos/integracao/" target="_blank">Integração</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/servicos/otimizacao-de-performance/" target="_blank">Otimização de performance</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/servicos/pacote-de-horas-de-servicos/" target="_blank">Pacote de horas de serviço</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/servicos/suporte/" target="_blank">Suporte</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/servicos/validacao/" target="_blank">Validação</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/servicos/automacao-processos/" target="_blank">Automação de processos</a></li>
                     </ul>
                 </li>
                 <!-- Dropdown Empresa -->
                 <li class="drop">
-                    <a href="https://www.softexpert.com/pt-br/empresa/">Empresa</a>
-                    <img id="icon_drop" src="images/seta_drop.png" title="drop">
+                    <a href="https://www.softexpert.com/pt-br/empresa/" target="_blank">Empresa<img id="icon_drop" src="images/seta_drop.png" title="drop"></a>
+                    
                     <ul class="drop-box">
-                        <li><a href="https://www.softexpert.com/pt-br/empresa/">Sobre a SoftExpert</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/contato/">Contato</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/parcerias/">Parceiros de Negócios</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/trabalhe-conosco/">Trabalhe Conosco</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/canal-de-denuncias/">Canal de denúncias</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/global-eventos/">Eventos</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/empresa/" target="_blank">Sobre a SoftExpert</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/contato/" target="_blank">Contato</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/parcerias/" target="_blank">Parceiros de Negócios</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/trabalhe-conosco/" target="_blank">Trabalhe Conosco</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/canal-de-denuncias/" target="_blank">Canal de denúncias</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/global-eventos/" target="_blank">Eventos</a></li>
                     </ul>
                 </li>
                 <!-- Dropdown Clientes -->
                 <li class="drop">
-                    <a href="https://www.softexpert.com/pt-br/clientes/">Clientes</a>
-                    <img id="icon_drop" src="images/seta_drop.png" title="drop">
+                    <a href="https://www.softexpert.com/pt-br/clientes/" target="_blank">Clientes<img id="icon_drop" src="images/seta_drop.png" title="drop"></a>
+                    
                     <ul class="drop-box">
-                        <li><a href="https://www.softexpert.com/pt-br/clientes/">Visão Geral</a></li>
-                        <li><a href="https://www.softexpert.com/wp-content/webp-express/webp-images/uploads/2023/04/logo-lp-principal.png.webp">Cases de Sucesso</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/depoimentos/">Depoimentos</a></li>
-                        <li><a href="https://www.softexpert.com/pt-br/material/?tp=,638">Vídeo Cases</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/clientes/" target="_blank">Visão Geral</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/wp-content/webp-express/webp-images/uploads/2023/04/logo-lp-principal.png.webp" target="_blank">Cases de Sucesso</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/depoimentos/" target="_blank">Depoimentos</a></li>
+                        <li class="drop-item"><a href="https://www.softexpert.com/pt-br/material/?tp=,638" target="_blank">Vídeo Cases</a></li>
                     </ul>
                 </li>
-                <li><a href="https://www.softexpert.com/pt-br/material/">Downloads</a></li>
-                <li><a href="https://www.softexpert.com/pt-br/noticias/">Notícias</a></li>
-                <li><a href="https://blog.softexpert.com/todos/">Blog</a></li>
+                <li><a href="https://www.softexpert.com/pt-br/material/" target="_blank">Downloads</a></li>
+                <li><a href="https://www.softexpert.com/pt-br/noticias/" target="_blank">Notícias</a></li>
+                <li><a href="https://blog.softexpert.com/todos/" target="_blank">Blog</a></li>
             </ul>
         </div>
         <!-- Logo SoftExpertSuite -->
@@ -412,14 +544,37 @@
         <div class="modal-head column">
             <button class="modal-close" onclick=close_modal()><img class="close-img" src="images/close.png" alt=""></button>
             <h2 class="modal-title">Por favor, preencha o formulário para entrarmos em contato</h2>
-        </div>
-        <div class="modal-body column">
             <p class="modal-obs"><i>*Campos obrigatórios</i></p>
+        </div>
+        <div class="modal-body column" id="modal-body">
             <label class="label" for="email">E-mail*</label>
             <input class="modal-input" type="email" id="email" placeholder="E-mail">
 
-            <label class="label" for="name">Nome Completo</label>
-            <input class="modal-input" type="text" id="name" placeholder="Nome">
+            <label class="label" for="name">Nome Completo*</label>
+            <input class="modal-input" type="text" id="name" placeholder="Nome" onmouseout= modal_extend()>
+
+            <label class="label ocult" for="cargo">Cargo*</label>
+            <input class="modal-input ocult" type="text" id="cargo" placeholder="Cargo">
+
+            <label class="label ocult" for="empresa">Empresa*</label>
+            <input class="modal-input ocult" type="text" id="empresa" placeholder="Empresa">
+
+            <label class="label ocult" for="industria">Indústria*</label>
+            <input class="modal-input ocult" type="text" id="industria" placeholder="Industria">
+
+            <label class="label ocult" for="pais">País</label>
+            <input class="modal-input ocult" type="text" id="pais" placeholder="Brasil">
+
+            <label class="label ocult" for="Estado">Estado*</label>
+            <input class="modal-input ocult" type="text" id="estado" placeholder="São Paulo">
+
+            <label class="label ocult" for="num">Número de Funcionários*</label>
+            <input class="modal-input ocult" type="text" id="num" placeholder="540">
+
+            <label class="label ocult" for="solucao">Necessidade de compra de uma solução*</label>
+            <input class="modal-input ocult" type="text" id="solucao" placeholder="Preciso de uma solução para...">
+
+            <a class="bot-enviar" href="https://www.softexpert.com/pt-br/obrigado-download/?id=60282" target="_blank">Enviar</a>
         </div>
     </div>
     

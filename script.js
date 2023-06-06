@@ -1,12 +1,24 @@
+//Declarando Variaveis
+
 const cont = document.getElementById("img");
 const cont2 = document.getElementById("img2");
 const arrow = document.getElementById("arrow-des");
 const lendo_txt = document.getElementById("continuar-lendo");
 arrow.style.transform = "rotate(-90deg)"
 
-const modal = document.getElementById("modal");
 const up = document.getElementById("up");
+const seta = document.getElementById("seta");
+const seta_link = document.getElementById("seta-link");
+const modal = document.getElementById("modal");
+const modal_body = document.getElementById("modal-body")
+const email = document.getElementById("email");
+const nome = document.getElementById("name");
+const labels_ocult = document.querySelectorAll(".ocult");
+const labels = document.querySelectorAll(".label");
+const inputs = document.querySelectorAll(".modal-input");
+const solucao = document.getElementById("solucao");
 
+// Declarando Lista de imagens 1
 const images1 = [
     "images/rolagem 1.1.png",
     "images/rolagem 1.2.png",
@@ -17,6 +29,7 @@ const images1 = [
     "images/rolagem 1.7.png",
     "images/rolagem 1.8.png"
 ]
+// Declarando Lista de imagens 2
 const images2 = [
     "images/rolagem 2.1.png",
     "images/rolagem 2.2.png",
@@ -29,18 +42,20 @@ const images2 = [
     "images/rolagem 2.9.png"
 ]
 
-
+// Dispor screenshots na tela
 for(let i = 0; i <= images1.length -1; i++){
-    cont.innerHTML += `<img class="slider-img" src="${images1[i]}" alt=""></img>`
+    cont.innerHTML += `<img class="slider-img" src="${images1[i]}" alt="Screemshot${i}"></img>`
 }
 for(let i = 0; i <= images2.length -1; i++){
-    cont2.innerHTML += `<img class="slider-img2" src="${images2[i]}" alt=""></img>`
+    cont2.innerHTML += `<img class="slider-img2" src="${images2[i]}" alt="Screemshot${i}"></img>`
 }
 
+// Declarando variaveis para slides
 let rol = 1320;
 let num = 0
 let num2 = 0
 
+// Função proxima seção slides 1
 function next(){
     if(num == 0){
         cont.style.transform += `translateX(-${rol}px)`
@@ -52,6 +67,7 @@ function next(){
     }
 }
 
+// Função proxima seção slides 2
 function next2(){
     if(num2 == 0){
         cont2.style.transform += `translateX(-${rol}px)`
@@ -66,7 +82,7 @@ function next2(){
         num2 = 0
     }
 }
-
+// Função para seção Continuar lendo
 function continuos(){
     if(arrow.style.transform == "rotate(-90deg)"){
         arrow.style.transform = "rotate(0deg)"
@@ -81,6 +97,8 @@ function continuos(){
     
 }
 
+
+// Função para Modal aparecer na tela
 function modal_email(){
     if(modal.style.visibility == "visible"){
         modal.style.visibility = "hidden"
@@ -88,11 +106,59 @@ function modal_email(){
         modal.style.visibility = "visible"
     }
 }
+
+// Função para fechar modal
 function close_modal(){
     modal.style.visibility = "hidden"
+    for(var i = 0; i <= inputs.length; i++){
+        inputs[i].value = ""
+    }
+    for(var i = 0; i <= labels.length; i++){
+        labels[i].value = ""
+    }
 }
 
-// document.addEventListener("scroll", function(){
-//     var posicion = 
-// })
-// https://pt.stackoverflow.com/questions/194428/evento-de-scroll
+// Adicionando evento de scroll para botão de voltar ao topo
+document.addEventListener("scroll", function(){
+    var posicionY = window.pageYOffset;
+    
+    if(posicionY > 600){
+        seta.style.position = "fixed"
+        seta.style.bottom = "5em"
+        seta.style.zIndex = "30"
+        seta.style.transform = 'rotate(180deg)'
+        seta_link.href = "#navbar"
+    }
+    else{
+        seta.style.position = "absolute"
+        seta.style.zIndex = "30"
+        seta.style.transform = 'rotate(0deg)'
+        seta_link.href = "#logo-soft"
+    }
+})
+
+//Fazendo função com evento de mousemove para extender o modal
+function modal_extend(){
+
+    document.addEventListener("mousemove", ()=>{
+        if(nome.value != ""){
+            for(var i = 0; i <= labels_ocult.length; i++){
+                labels_ocult[i].style.visibility = "visible"
+                modal.style.height = "800px"
+                modal_body.style.height = "1000px"
+                modal_body.style.transform = "translatey(250px)"
+                modal.style.overflowY = "scroll"
+            }
+        }
+        else{
+            for(var i = 0; i <= labels_ocult.length; i++){
+                labels_ocult[i].style.visibility = "hidden"
+                modal.style.height = "450px"
+                modal_body.style.height = "auto"
+                modal_body.style.transform = "translatey(420px)"
+                modal.style.overflowY = "hidden"
+            }
+        }
+    })
+}
+

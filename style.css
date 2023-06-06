@@ -51,6 +51,7 @@ body{
     display:block;
 }
 
+
 .menu li ul li{
     display:block;    
 }
@@ -73,14 +74,59 @@ body{
 }
 .drop-box{
     background-color: aliceblue;
+    width: auto;
+    padding: 1em;
+}
+.drop-box-drop{
+    background-color: #dbdbdb;
+    width: 20em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform: translate3d(10em,-1.55em,0em);
+    visibility: hidden;
+}
+#idiomas{
+    width: 2em;
+}
+#idiomas a{
+    margin: auto;
 }
 .drop-box a{
     color: black;
+    padding: 0.5em;
+}
+.drop-item{
+    width: 10em;
+}
+.drop-idi{
+    width: auto;
+}
+.drop-item:hover, .drop-idi:hover{
+    background-color: #d8d8d8;
+}
+.drop-item:hover .drop-box-drop{
+    background-color: #ffffff;
+    visibility: visible;
+}
+.drop-idi:hover .drop-box-drop{
+    background-color: #ffffff;
+    visibility: visible;
 }
 
 #icon_drop{
     width: 0.9em;
     height: 0.9em;
+    margin: 0em 0.5em;
+}
+#SoftExpert{
+    margin: 1em 0em;
+    font-weight: 600;
+}
+#drop-img{
+    background-color: white;
+    width: auto;
 }
 
 .logo-block{
@@ -113,6 +159,7 @@ body{
     border-radius: 10em;
 }
 .seta-page{
+    margin-top: 0.5em;
     transform: rotate(90deg);
     width: 50%;
 }
@@ -588,6 +635,28 @@ hr{
     text-decoration: none;
     color: #484848;
 }
+.seta-top{
+    position: fixed;
+    right: 10em;
+    bottom: 2em;
+    width: 4em;
+    height: 4em;
+    border-radius: 5em;
+    background-color: white;
+    z-index: 30;
+    transform: translateY(100px);
+    transition: all 0.5s ease-in-out;
+    /* visibility: hidden; */
+}
+.up-page{
+    width: 90%;
+    position: absolute;
+    margin: auto;
+    top: 0em;
+    bottom: 0em;
+    right: 0em;
+    left: 0em;
+}
 .Modal{
     position: absolute;
     margin: auto;
@@ -603,6 +672,7 @@ hr{
     padding: 0;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
+    overflow: hidden;
 }
 .modal-head{
     background-color: #484848;
@@ -641,11 +711,12 @@ hr{
     bottom: 0;
     left: 0;
     right: 0;
-    
+    transform: translatey(420px);
 }
 .modal-obs{
     position: absolute;
-    top: 6em;
+    margin: auto;
+    top: 110%;
     left: 1em;
 }
 .label{
@@ -659,27 +730,18 @@ hr{
     height: 1em;
     padding: 1em;
 }
-.seta-top{
-    position: fixed;
-    right: 10em;
-    bottom: 2em;
-    width: 4em;
-    height: 4em;
-    border-radius: 5em;
-    background-color: white;
-    z-index: 30;
+.ocult{
     visibility: hidden;
 }
-.up-page{
-    width: 90%;
-    position: absolute;
-    margin: auto;
-    top: 0em;
-    bottom: 0em;
-    right: 0em;
-    left: 0em;
-}
 
+.bot-enviar{
+    padding: 1em 2em;
+    background-color: #798bee;
+    margin: 2em;
+    border-radius: 0.2em;
+    text-decoration: none;
+    color: white;
+}
 
 
 
@@ -795,7 +857,7 @@ hr{
     background-image: url(https://www.softexpert.com/ext/teste-estagio-devweb/quebra-cabecas.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     height: 1365px;
 }
 #container-semipage3{
