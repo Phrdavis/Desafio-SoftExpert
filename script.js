@@ -17,6 +17,8 @@ const labels_ocult = document.querySelectorAll(".ocult");
 const labels = document.querySelectorAll(".label");
 const inputs = document.querySelectorAll(".modal-input");
 const solucao = document.getElementById("solucao");
+const video_play = document.getElementById("video-play");
+const video = document.getElementById("video")
 
 // Declarando Lista de imagens 1
 const images1 = [
@@ -161,4 +163,45 @@ function modal_extend(){
         }
     })
 }
+// Função para abrir janela do vídeo
+function play_video(){
+    video_play.style.visibility = "visible"
+    video.setAttribute('src', "https://www.youtube.com/embed/NLcTcsdO86U")
+}
+// Função para fechar janela do Vídeo
+function close_video(){
+    video_play.style.visibility = "hidden"
+    video.setAttribute('src', "")
+}
 
+// SCRIPT PARA ELEMENTOS DA TELA APARECEREM COM SCROLL DO MOUSE 
+
+// Procura pelos elementos '[data-anime]'
+const target = document.querySelectorAll('[data-anime]'); 
+// Cria uma classe 'animated'
+const animationClass = 'animated';
+
+function animeScroll(){
+    // Cria variavel para ver localização do Scroll do mouse
+    const windowTop = window.pageYOffset + (window.innerHeight * 3)/4;
+    // Para cada elemento do target execute:
+    target.forEach(function(element){
+        // Se a localização do scroll for maior que a localização do elemento:
+        if(windowTop > element.offsetTop){
+            // Adiciona a classe criada
+            element.classList.add(animationClass);
+        }else{
+            // Remove a classe criada
+            element.classList.remove(animationClass);
+        }
+    })
+}
+
+// Se existir algum elemento execute:
+if(target.length){
+    // Adicionando evento listener para scroll do mouse
+    window.addEventListener('scroll', function(){
+        // Chama a função
+        animeScroll();
+    })
+}

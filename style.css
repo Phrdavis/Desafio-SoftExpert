@@ -209,9 +209,21 @@ body{
     height: 8em;
     background-color: #cd384f;
     margin: 20px;
+    animation: bot-play 2s infinite;
+    cursor: pointer;
 }
 
-
+@keyframes bot-play {
+    0%{
+        box-shadow: 0px 0px 0px 0px #cd384e94;
+    }
+    80%{
+        box-shadow: 0px 0px 0px 30px #cd384e00;
+    }
+    100%{
+        box-shadow: 0px 0px 0px 30px #cd384e00;
+    }
+}
 .ring{
     border: 5px solid white;
     border-radius: 10em;
@@ -223,6 +235,34 @@ body{
     width: 50%;
     margin-left: 10px;
 }
+.video-play{
+    background-color: white;
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 1280px;
+    height: 720px;
+    z-index: 50;
+    visibility: hidden;
+}
+.bot-close-video{
+    cursor: pointer;;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 3em;
+    background-color: transparent;
+    border: none;
+}
+.close-video{
+    width: 100%;
+}
+
 
 .monitor-block{
     overflow: hidden;
@@ -743,6 +783,18 @@ hr{
     color: white;
 }
 
+[data-anime]{
+    opacity: 0;
+    transition: 0.3s;
+}
+[data-anime = "up"]{
+    transform: translate3d(0, 100px, 0);
+}
+[data-anime].animated{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    
+}
 
 
 
