@@ -1,7 +1,24 @@
 //Declarando Variaveis
 
-const cont = document.getElementById("img");
+const cont1 = document.getElementById("img1");
 const cont2 = document.getElementById("img2");
+const cont3 = document.getElementById("img3");
+const cont4 = document.getElementById("img4");
+const cont5 = document.getElementById("img5");
+const cont6 = document.getElementById("img6");
+const cont7 = document.getElementById("img7");
+const cont8 = document.getElementById("img8");
+
+const cont9 = document.getElementById("img9");
+const cont10 = document.getElementById("img10");
+const cont11 = document.getElementById("img11");
+const cont12 = document.getElementById("img12");
+const cont13 = document.getElementById("img13");
+const cont14 = document.getElementById("img14");
+const cont15 = document.getElementById("img15");
+const cont16 = document.getElementById("img16");
+const cont17 = document.getElementById("img17");
+
 const arrow = document.getElementById("arrow-des");
 const lendo_txt = document.getElementById("continuar-lendo");
 arrow.style.transform = "rotate(-90deg)"
@@ -46,44 +63,653 @@ const images2 = [
     "images/rolagem 2.9.png"
 ]
 
-// Dispor screenshots na tela
-for(let i = 0; i <= images1.length -1; i++){
-    cont.innerHTML += `<img class="slider-img" src="${images1[i]}" alt="Screemshot${i}"></img>`
-}
-for(let i = 0; i <= images2.length -1; i++){
-    cont2.innerHTML += `<img class="slider-img2" src="${images2[i]}" alt="Screemshot${i}"></img>`
-}
+cont1.innerHTML = `<img class="cont-img-fit" src="${images1[0]}" alt="">`
+cont2.innerHTML = `<img class="cont-img-fit" src="${images1[1]}" alt="">`
+cont3.innerHTML = `<img class="cont-img-fit" src="${images1[2]}" alt="">`
+cont4.innerHTML = `<img class="cont-img-fit" src="${images1[3]}" alt="">`
+cont5.innerHTML = `<img class="cont-img-fit" src="${images1[4]}" alt="">`
+cont6.innerHTML = `<img class="cont-img-fit" src="${images1[5]}" alt="">`
+cont7.innerHTML = `<img class="cont-img-fit" src="${images1[6]}" alt="">`
+cont8.innerHTML = `<img class="cont-img-fit" src="${images1[7]}" alt="">`
 
-// Declarando variaveis para slides
-let rol = 1320;
-let num = 0
-let num2 = 0
 
-// Função proxima seção slides 1
-function next(){
+cont9.innerHTML = `<img class="cont-img-fit" src="${images2[0]}" alt="">`
+cont10.innerHTML = `<img class="cont-img-fit" src="${images2[1]}" alt="">`
+cont11.innerHTML = `<img class="cont-img-fit" src="${images2[2]}" alt="">`
+cont12.innerHTML = `<img class="cont-img-fit" src="${images2[3]}" alt="">`
+cont13.innerHTML = `<img class="cont-img-fit" src="${images2[4]}" alt="">`
+cont14.innerHTML = `<img class="cont-img-fit" src="${images2[5]}" alt="">`
+cont15.innerHTML = `<img class="cont-img-fit" src="${images2[6]}" alt="">`
+cont16.innerHTML = `<img class="cont-img-fit" src="${images2[7]}" alt="">`
+cont17.innerHTML = `<img class="cont-img-fit" src="${images2[8]}" alt="">`
+
+var num = 0
+var num2 = 0
+var i = 0
+function next1(){
+
     if(num == 0){
-        cont.style.transform += `translateX(-${rol}px)`
+        cont5.innerHTML = `<img class="cont-img-fit" src="${images1[0]}" alt="">`
+        cont6.innerHTML = `<img class="cont-img-fit" src="${images1[1]}" alt="">`
+        cont7.innerHTML = `<img class="cont-img-fit" src="${images1[2]}" alt="">`
+        cont8.innerHTML = `<img class="cont-img-fit" src="${images1[3]}" alt="">`
+        
+        cont1.innerHTML = `<img class="cont-img-fit" src="${images1[4]}" alt="">`
+        cont2.innerHTML = `<img class="cont-img-fit" src="${images1[5]}" alt="">`
+        cont3.innerHTML = `<img class="cont-img-fit" src="${images1[6]}" alt="">`
+        cont4.innerHTML = `<img class="cont-img-fit" src="${images1[7]}" alt="">`
+        
+        
+        cont1.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont2.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont3.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont4.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        
+        cont5.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont6.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont7.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont8.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+
         num = 1
     }
-    else{
-        cont.style.transform += `translateX(${rol}px)`
+    else if(num == 1){
+        cont5.innerHTML = `<img class="cont-img-fit" src="${images1[4]}" alt="">`
+        cont6.innerHTML = `<img class="cont-img-fit" src="${images1[5]}" alt="">`
+        cont7.innerHTML = `<img class="cont-img-fit" src="${images1[6]}" alt="">`
+        cont8.innerHTML = `<img class="cont-img-fit" src="${images1[7]}" alt="">`
+        
+        cont1.innerHTML = `<img class="cont-img-fit" src="${images1[0]}" alt="">`
+        cont2.innerHTML = `<img class="cont-img-fit" src="${images1[1]}" alt="">`
+        cont3.innerHTML = `<img class="cont-img-fit" src="${images1[2]}" alt="">`
+        cont4.innerHTML = `<img class="cont-img-fit" src="${images1[3]}" alt="">`
+        
+        
+        cont1.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont2.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont3.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont4.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        
+        cont5.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont6.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont7.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont8.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        
+        num = 0
+    }
+
+}
+function prev1(){
+
+    if(num == 0){
+        cont5.innerHTML = `<img class="cont-img-fit" src="${images1[0]}" alt="">`
+        cont6.innerHTML = `<img class="cont-img-fit" src="${images1[1]}" alt="">`
+        cont7.innerHTML = `<img class="cont-img-fit" src="${images1[2]}" alt="">`
+        cont8.innerHTML = `<img class="cont-img-fit" src="${images1[3]}" alt="">`
+        
+        cont1.innerHTML = `<img class="cont-img-fit" src="${images1[4]}" alt="">`
+        cont2.innerHTML = `<img class="cont-img-fit" src="${images1[5]}" alt="">`
+        cont3.innerHTML = `<img class="cont-img-fit" src="${images1[6]}" alt="">`
+        cont4.innerHTML = `<img class="cont-img-fit" src="${images1[7]}" alt="">`
+        
+        
+        cont1.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont2.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont3.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont4.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        
+        cont5.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont6.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont7.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont8.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+
+        num = 1
+    }
+    else if(num == 1){
+        cont5.innerHTML = `<img class="cont-img-fit" src="${images1[4]}" alt="">`
+        cont6.innerHTML = `<img class="cont-img-fit" src="${images1[5]}" alt="">`
+        cont7.innerHTML = `<img class="cont-img-fit" src="${images1[6]}" alt="">`
+        cont8.innerHTML = `<img class="cont-img-fit" src="${images1[7]}" alt="">`
+        
+        cont1.innerHTML = `<img class="cont-img-fit" src="${images1[0]}" alt="">`
+        cont2.innerHTML = `<img class="cont-img-fit" src="${images1[1]}" alt="">`
+        cont3.innerHTML = `<img class="cont-img-fit" src="${images1[2]}" alt="">`
+        cont4.innerHTML = `<img class="cont-img-fit" src="${images1[3]}" alt="">`
+        
+        
+        cont1.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont2.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont3.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont4.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        
+        cont5.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont6.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont7.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont8.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        
+        num = 0
+    }
+
+}
+function next2(){
+    
+    if(num == 0){
+        cont13.innerHTML = `<img class="cont-img-fit" src="${images2[0]}" alt="">`
+        cont14.innerHTML = `<img class="cont-img-fit" src="${images2[1]}" alt="">`
+        cont15.innerHTML = `<img class="cont-img-fit" src="${images2[2]}" alt="">`
+        cont16.innerHTML = `<img class="cont-img-fit" src="${images2[3]}" alt="">`
+
+        cont17.innerHTML = `<img class="cont-img-fit" src="${images2[4]}" alt="">`
+        cont9.innerHTML = `<img class="cont-img-fit" src="${images2[5]}" alt="">`
+        cont10.innerHTML = `<img class="cont-img-fit" src="${images2[6]}" alt="">`
+        cont11.innerHTML = `<img class="cont-img-fit" src="${images2[7]}" alt="">`
+
+        cont12.innerHTML = `<img class="cont-img-fit" src="${images2[8]}" alt="">`
+        
+        cont9.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont10.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont11.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont12.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        
+        cont13.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont14.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont15.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont16.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont17.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+
+        num = 1
+    }
+    else if(num == 1){
+        cont14.innerHTML = `<img class="cont-img-fit" src="${images2[5]}" alt="">`
+        cont15.innerHTML = `<img class="cont-img-fit" src="${images2[6]}" alt="">`
+        cont16.innerHTML = `<img class="cont-img-fit" src="${images2[7]}" alt="">`
+        cont17.innerHTML = `<img class="cont-img-fit" src="${images2[8]}" alt="">`
+        
+        cont9.innerHTML = `<img class="cont-img-fit" src="${images2[0]}" alt="">`
+        cont10.innerHTML = `<img class="cont-img-fit" src="${images2[1]}" alt="">`
+        cont11.innerHTML = `<img class="cont-img-fit" src="${images2[2]}" alt="">`
+        cont12.innerHTML = `<img class="cont-img-fit" src="${images2[3]}" alt="">`
+
+        cont13.innerHTML = `<img class="cont-img-fit" src="${images2[4]}" alt="">`
+        
+        
+        cont9.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont10.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont11.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont12.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        
+        cont13.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont14.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont15.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont16.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont17.animate([
+            {transform: "translateX(40em)"},
+            {transform: "translateX(-40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        
         num = 0
     }
 }
+function prev2(){
+    
+    if(num == 0){
+        cont13.innerHTML = `<img class="cont-img-fit" src="${images2[i]}" alt="">`
+        cont14.innerHTML = `<img class="cont-img-fit" src="${images2[i+1]}" alt="">`
+        cont15.innerHTML = `<img class="cont-img-fit" src="${images2[i+2]}" alt="">`
+        cont16.innerHTML = `<img class="cont-img-fit" src="${images2[i+3]}" alt="">`
 
-// Função proxima seção slides 2
-function next2(){
-    if(num2 == 0){
-        cont2.style.transform += `translateX(-${rol}px)`
-        num2 = 1
+        cont17.innerHTML = `<img class="cont-img-fit" src="${images2[i+4]}" alt="">`
+        cont9.innerHTML = `<img class="cont-img-fit" src="${images2[i+5]}" alt="">`
+        cont10.innerHTML = `<img class="cont-img-fit" src="${images2[i+6]}" alt="">`
+        cont11.innerHTML = `<img class="cont-img-fit" src="${images2[i+7]}" alt="">`
+
+        cont12.innerHTML = `<img class="cont-img-fit" src="${images2[i+8]}" alt="">`
+        
+        
+        cont9.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont10.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont11.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont12.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        
+        cont13.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont14.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont15.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont16.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont17.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+
+        num = 1
+        i = 0
     }
-    else if(num2 == 1){
-        cont2.style.transform += `translateX(-${rol}px)`
-        num2 = 2
-    }
-    else{
-        cont2.style.transform += `translateX(${num2 * rol}px)`
-        num2 = 0
+    else if(num == 1){
+        cont14.innerHTML = `<img class="cont-img-fit" src="${images2[i+5]}" alt="">`
+        cont15.innerHTML = `<img class="cont-img-fit" src="${images2[i+6]}" alt="">`
+        cont16.innerHTML = `<img class="cont-img-fit" src="${images2[i+7]}" alt="">`
+        cont17.innerHTML = `<img class="cont-img-fit" src="${images2[i+8]}" alt="">`
+        
+        cont9.innerHTML = `<img class="cont-img-fit" src="${images2[i]}" alt="">`
+        cont10.innerHTML = `<img class="cont-img-fit" src="${images2[i+1]}" alt="">`
+        cont11.innerHTML = `<img class="cont-img-fit" src="${images2[i+2]}" alt="">`
+        cont12.innerHTML = `<img class="cont-img-fit" src="${images2[i+3]}" alt="">`
+
+        cont13.innerHTML = `<img class="cont-img-fit" src="${images2[i+4]}" alt="">`
+        
+        
+        cont9.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont10.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont11.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont12.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        
+        cont13.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont14.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont15.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont16.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        cont17.animate([
+            {transform: "translateX(-40em)"},
+            {transform: "translateX(40em)",
+            transition: "all 0.3s ease-in-out"}
+        ], {
+            duration: 400,
+        });
+        
+        num = 0
     }
 }
 // Função para seção Continuar lendo
