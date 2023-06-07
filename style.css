@@ -807,6 +807,7 @@ hr{
     width: 100%;
     height: 100%;
     border-radius: 10em;
+    cursor: pointer;
 }
 .chat-status{
     position: absolute;
@@ -903,6 +904,7 @@ hr{
     height: 2em;
 }
 .notific{
+    cursor: pointer;
     position: fixed;
     right: 3em;
     bottom: 7em;
