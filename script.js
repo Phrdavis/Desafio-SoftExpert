@@ -736,6 +736,30 @@ function modal_email(){
         modal.style.visibility = "visible"
     }
 }
+//Fazendo função com evento de mousemove para extender o modal
+function modal_extend(){
+
+    document.addEventListener("mousemove", ()=>{
+        if(nome.value != ""){
+            for(var i = 0; i <= labels_ocult.length; i++){
+                labels_ocult[i].style.visibility = "visible"
+                modal.style.height = "800px"
+                modal_body.style.height = "1000px"
+                modal_body.style.transform = "translatey(250px)"
+                modal.style.overflowY = "scroll"
+            }
+        }
+        else{
+            for(var i = 0; i <= labels_ocult.length; i++){
+                labels_ocult[i].style.visibility = "hidden"
+                modal.style.height = "450px"
+                modal_body.style.height = "auto"
+                modal_body.style.transform = "translatey(420px)"
+                modal.style.overflowY = "hidden"
+            }
+        }
+    })
+}
 
 // Função para fechar modal
 function close_modal(){
@@ -767,30 +791,6 @@ document.addEventListener("scroll", function(){
     }
 })
 
-//Fazendo função com evento de mousemove para extender o modal
-function modal_extend(){
-
-    document.addEventListener("mousemove", ()=>{
-        if(nome.value != ""){
-            for(var i = 0; i <= labels_ocult.length; i++){
-                labels_ocult[i].style.visibility = "visible"
-                modal.style.height = "800px"
-                modal_body.style.height = "1000px"
-                modal_body.style.transform = "translatey(250px)"
-                modal.style.overflowY = "scroll"
-            }
-        }
-        else{
-            for(var i = 0; i <= labels_ocult.length; i++){
-                labels_ocult[i].style.visibility = "hidden"
-                modal.style.height = "450px"
-                modal_body.style.height = "auto"
-                modal_body.style.transform = "translatey(420px)"
-                modal.style.overflowY = "hidden"
-            }
-        }
-    })
-}
 // Função para abrir janela do vídeo
 function play_video(){
     video_play.style.visibility = "visible"
