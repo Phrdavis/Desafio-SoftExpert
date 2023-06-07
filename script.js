@@ -18,7 +18,9 @@ const labels = document.querySelectorAll(".label");
 const inputs = document.querySelectorAll(".modal-input");
 const solucao = document.getElementById("solucao");
 const video_play = document.getElementById("video-play");
-const video = document.getElementById("video")
+const video = document.getElementById("video");
+const chat_open = document.getElementById("chat");
+const notific = document.getElementById("notific");
 
 // Declarando Lista de imagens 1
 const images1 = [
@@ -204,4 +206,15 @@ if(target.length){
         // Chama a função
         animeScroll();
     })
+}
+
+
+// Função para abrir chat
+function chat(){
+    chat_open.style.transform = "translateY(0em)"
+    notific.style.visibility = "hidden"
+}
+function close_chat(){
+    chat_open.style.transform = "translateY(35em)"
+    notific.style.visibility = "visible"
 }

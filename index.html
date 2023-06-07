@@ -306,35 +306,44 @@
     </div>
     <!-- Print como fundo disponibilizado pela empresa para o teste -->
     <div class="container column" id="container-semipage2">
-        <img class="teste" src="https://www.softexpert.com/ext/teste-estagio-devweb/quebra-cabecas.png" alt="">
+        <img class="img-print" src="https://www.softexpert.com/ext/teste-estagio-devweb/quebra-cabecas.png" alt="">
     </div>
     <!-- Screenshots -->
     <div class="container column" id="container-light">
         <!-- Titulo -->
         <h2 class="screen" data-anime= "up">Screenshots</h2>
-        
-        <!-- Primeira Rolagem de fotos -->
-        <div class="carrosel row-center" data-anime= "up">
+    
+        <div class="row-center">
             <!-- Botão de voltar -->
-            <button class="column" id="prev" onclick= next()> <img class="seta-slide" src="images/right-arrow.png" alt=""> </button>
-            
-            <!-- Local aonde as fotos são inseridas via JS -->
-            <div class="cont" id="img"></div>
-
+            <button class="column" id="prev" onclick= next()>
+                <img class="seta-slide" src="images/right-arrow.png" alt="">
+            </button>
+            <!-- Primeira Rolagem de fotos -->
+            <div class="carrosel row-center" data-anime= "up">
+                <!-- Local aonde as fotos são inseridas via JS -->
+                <div class="cont" id="img"></div>
+            </div>
             <!-- Botão de Próximo -->
-            <button class="column" id="next" onclick= next()> <img class="seta-slide" src="images/right-arrow.png" alt=""> </button>
+            <button class="column" id="next" onclick= next()>
+                <img class="seta-slide" src="images/right-arrow.png" alt="">
+            </button>
         </div>
 
-        <!-- Segunda Rolagem de fotos -->
-        <div class="carrosel row-center" data-anime= "up">
+        <div class="row-center">
             <!-- Botão de voltar -->
-            <button class="column" id="prev" onclick= next2()> <img class="seta-slide" src="images/right-arrow.png" alt=""> </button>
+            <button class="column" id="prev" onclick= next2()>
+                <img class="seta-slide" src="images/right-arrow.png" alt="">
+            </button>
+            <!-- Segunda Rolagem de fotos -->
+            <div class="carrosel row-center" data-anime= "up">
             
-            <!-- Local aonde as fotos são inseridas via JS -->
-            <div class="cont" id="img2"></div>
-
+                <!-- Local aonde as fotos são inseridas via JS -->
+                <div class="cont" id="img2"></div>
+            </div>
             <!-- Botão de Próximo -->
-            <button class="column" id="next" onclick= next2()> <img class="seta-slide" src="images/right-arrow.png" alt=""> </button>
+            <button class="column" id="next" onclick= next2()>
+                <img class="seta-slide" src="images/right-arrow.png" alt="">
+            </button>
         </div>
     </div>
     <!-- Befícios -->
@@ -573,12 +582,52 @@
             <a class="bot-enviar" href="https://www.softexpert.com/pt-br/obrigado-download/?id=60282" target="_blank" onclick= close_modal()>Enviar</a>
         </div>
     </div>
-    
     <!-- Modal Vídeo -->
     <div class="video-play" id="video-play">
-        <iframe id="video" width="1280" height="720" src="https://www.youtube.com/embed/NLcTcsdO86U" title="SoftExpert Excellence Suite - Solução para gestão da conformidade, inovação e transformação digital" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe id="video" src="https://www.youtube.com/embed/NLcTcsdO86U" title="SoftExpert Excellence Suite - Solução para gestão da conformidade, inovação e transformação digital" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         <button class="bot-close-video" onclick= close_video()><img src="images/close.png" class="close-video" alt=""></button>
+    </div>
+    <!-- Modal Icon chat -->
+    <div class="chat" onclick= chat()>
+        <img class="chat-icon" src="https://cdn.leadster.com.br/neurolead/img/avatar/3.png" alt="">
+        <div class="chat-status"></div>
+    </div>
+    <!-- Modal chat aberto -->
+    <div class="chat-open" id="chat">
+        <div class="chat-head">
+            <div class="chat-opened">
+                <img class="chat-icon" src="https://cdn.leadster.com.br/neurolead/img/avatar/3.png" alt="">
+                <div class="chat-status"></div>
+            </div>
+            <h3 class="chat-name">Ana - SoftExpert</h3>
+            <p class="chat-online"> Online agora</p>
+            <div class="chat-close" onclick= close_chat()>
+                <img class="chat-bot-close" src="images/close.png" alt="Botão Fechar">
+            </div>
+        </div>  
+        <div class="chat-body">
+            <div class="chat-img">
+                <img class="chat-icon" src="https://cdn.leadster.com.br/neurolead/img/avatar/3.png" alt="">
+            </div>
+            <div class="chat-msg">
+                <p>Olá, como posso ajudar?</p>
+                <button class="chat-bot1 row-bet-center">
+                    <p>Quero um contato para mais informações das Soluções</p>
+                    <img class="chat-seta" src="images/right-arrow (1).png" alt="">
+                </button>
+                <button class="chat-bot1 row-bet-center">
+                    <p>Quero um contato para mais informações das Soluções</p>
+                    <img class="chat-seta" src="images/right-arrow (1).png" alt="">
+                </button>
+                <p class="politc"><small>Clicando acima você aceita as políticas de privacidade deste <a href="#">site</a> e da <a href="#">Leadster</a></small></p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Notificações -->
+    <div class="notific" id="notific">
+        <div class="notific-on"></div>
+        <img src="images/notification.png" alt="">
     </div>
 
     <!-- Footer e Infos -->
