@@ -19,3 +19,5 @@ Até o momento o site ainda não é responsível, sendo suportado em resoluçõe
 - index.html
 - style.css
 - script.js
+
+A pasta "images" contém todas as fotos e icones utilizados dentro do projeto.
